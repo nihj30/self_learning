@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/logos/Favicon_Brain.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>CodeCamp</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/logos/codecamp.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#about_section">About Us</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Get Started</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Empower Your Future: Discover Endless Learning Opportunities!</p>
+				<h5>Empower Your Future through Discovery. Uncover a world of endless learning opportunities, where each moment is a chance to grow, evolve, and shape your destiny. Embrace the journey ahead, fueled by the boundless potential within you.</h5>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/roshan.jpeg" alt="Username">
+				<p>roshank9419</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+<!-- Some Popular Subjects -->
+	<div class="title">
+		<span>Popular Subjects on CodeCamp</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="subjects/engineering.html"><img src="images/courses/book.png">Engineering</a></div>
+		<div class="det"><a href="subjects/logics.html"><img src="images/courses/d1.png">Logics</a></div>
+		<div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">Assesments</a></div>
+		</div></center>
+		<div class="cbox">
+		<div class="det"><a href="subjects/computer_courses.html"><img src="images/courses/computer.png">Computer Courses</a></div>
+		<div class="det"><a href="subjects/computer_courses.html#data"><img src="images/courses/data.png">Data Structures</a></div>
+		<div class="det"><a href="subjects/computer_courses.html#algo"><img src="images/courses/algo.png">Algorithm</a></div>
+		</div>
+	</div>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/bg/side_room.jpg">
+				</div>
+				<div class="side-text">
+					<h2>About us...</h2>
+					<p> At CodeCamp, we are dedicated to helping users fully understand the topics covered in computer engineering courses and other related programs and curricula. Our comprehensive approach ensures that learners grasp both fundamental and advanced concepts, enabling them to excel in their studies and future careers. Through a combination of expert instruction, hands-on practice, and interactive resources, we provide a robust educational experience tailored to the needs of each student. Whether you're a beginner looking to get started or an advanced learner seeking to deepen your knowledge, CodeCamp is here to support your educational journey.</p> 
+				</div>
+		</div>
+	</div>
+
+
+<!-- PORTFOLIO -->
+	<div class="diffSection" id="portfolio_section">
+		<center><p style="font-size: 50px; padding: 50px; padding-bottom: 40px;"></p></center>
+		<div class="content">
+			<p>“If you are not willing to learn,
+				no one can help you.
+				If you are determined to learn,
+				no one can stop you.” <br>
+			<p>- Zig Ziglar</p>
+			</p> <br><br>
+		</div>
+	</div>
+	<div class="extra">
+		<p>We're increasing this data every year</p>
+		<div class="smbox">
+		<span><center><div class="data">154</div><div class="det">Enrolled Students</div></center></span>
+		<span><center><div class="data">62</div><div class="det">Total Courses</div></center></span>
+		<span><center><div class="data">56</div><div class="det">Placed Students</div></center></span>
+		<span><center><div class="data">27</div><div class="det">Total Projects</div></center></span>
+		</div>
+	</div>
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+		</div>
+		<a><div class="s-card"><img src="images/icon/computer-courses.png"><p>Free Online Computer Courses</p></div></a>
+		<a><div class="s-card"><img src="images/icon/brainbooster.png"><p>Building Concepts for Competitive Exams</p></div></a>
+		<a><div class="s-card"><img src="images/icon/online-tutorials.png"><p>Online Video Lectures</p></div></a>
+		<a><div class="s-card"><img src="images/icon/papers.jpg"><p>Sample Papers and books for Technology</p></div></a>
+		<a><div class="s-card"><img src="images/icon/p3.png"><p>Performance and Ranking Report</p></div></a>
+		<a><div class="s-card"><img src="images/icon/discussion.png"><p>Discussion with Our Tutors & Mentors</p></div></a>
+		<a><div class="s-card"><img src="images/icon/q1.png"><p>Daily Brain Teasing Questions to Improve IQ</p></div></a>
+		<a><div class="s-card"><img src="images/icon/help.png"><p>24/7 Online Support</p></div></a>
+	</div>
+
+<!-- Reviews by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/icon/makeitfull.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">What the Students Say About Us?</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/icon/no_pic.jpg"><p>Olivia Marie Martinez</p>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					While browsing through the codecamp I manage to study data structure and algorithm and also different programming languages such us java, phyton, html & css. This website helps me improve my knowledge about front end web development, it was a great help in self study people like me.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/icon/no_pic.jpg"><p>Ethan John Davis</p>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Codecamp give the best information and courses which is good for students like us since not everyone has the same course programs or subject, with the courses they give students different choice that is in line with their subject or program. The best thing about codecamp is they have quizzes so students can answer to know if their skills and knowledge is improving and giving them insight on where they excel.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/icon/no_pic.jpg"><p>Emma Marie Johnson</p>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Codecamp engagement with their users give the website a good reviews since it's already has a user friendly interface it's still help user in their concerns. Which is good for a e-learning website.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/icon/no_pic.jpg"><p>Michael Smith</p>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Code Camp has been incredibly meaningful to me. It's not just about sharpening my technical skills, but it's also about collaborating with my teammates, which has taught me the value of communication and teamwork. This experience has not only helped me grow professionally but has also enhanced my ability to work efficiently and harmoniously within a team setting.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Your feedback is pretty much appreciated</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/logos/codecamp.png" style="width: 185px;">
+				<div class="logo"></div><br><br>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+			
+				</div><br>
+				<br><p><img src="images/icon/location.png"> Makati Tech Tower, 101 E. De La Rosa Street, <br>Makati City, 1229 Metro Manila </p><br>
+				<p><img src="images/icon/phone.png"> +63 965 228 4677<br><br><img src="images/icon/mail.png">&nbsp; CodeCamp_online@gmail.com</p><br>
+				<p class="rights-text">Copyright © 2024 CodeCamp All Rights Reserved.</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
